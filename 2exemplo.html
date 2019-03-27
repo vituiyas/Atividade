@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+		}
+		label{
+			color: green;
+		}
+		.box{
+			border: 1px solid gray;
+			border-radius: 5px;
+			max-width: 500px;
+			box-shadow: 3px 3px 3px black;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>Cadastro de Usuário</h1>
+		<hr>
+	<form>
+		<label for="nome">Nome</label>
+	<br>
+		<input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlenght="5">
+	<br>
+	<br>
+		<label for="email">E-Mail</label>
+	<br>
+		<input type="email" id="email" required placeholder="nome@email.com">
+	<br>
+	<br>
+		<label for="senha">Senha</label>
+	<br>
+		<input id="senha" type="passoword" minlength="6" required>
+	<br>
+	<br>
+		<label>Escolha suas frutas favoritas</label>
+	<br>
+		<input id="laranja" type="checkbox" value="laranja">		<label for="laranja">Laranja</label>
+		<input id="maca" type="checkbox" value="maca">			<label for="maca">Maçã</label>
+		<input id="banana" type="checkbox" value="banana">			<label for="banana">Banana</label>
+	<br>
+	<br>
+		<label>Sexo</label>
+	<br>
+		<input name="Sexo" id="f" type="radio" value="f">			<label for="f">F</label>
+		<input name="Sexo" id="m" type="radio" value="m">			<label for="m">M</label>
+		<input name="Sexo" id="o" type="radio" value="o">			<label for="o">O</label>
+	<br>
+	<br>
+		<label for="cor">Escolha uma cor</label>
+	<br>
+		<input id="cor" type="color">
+	<br>
+	<br>
+		<label for="aniversario">Data de Aniversário</label>
+	<br>
+		<input id="aniversario" type="date" required>
+	<br>
+	<br>
+		<label for="idade">Idade</label>
+	<br>
+		<input id="idade" type="number" min="10">
+	<br>
+	<br>
+		<label for="nota">Nota</label>
+	<br>
+		<input id="nota" type="range" min="0" max="10">
+	<br>
+	<br>
+		<label for="pagina">Página</label>
+	<br>
+		<input id="pagina" type="url" placeholder="https://suapagina.com">
+	<br>
+	<br>
+		<input type="submit" value="Cadastrar">
+	</form>
+	</div>
+</body>
+</html>
